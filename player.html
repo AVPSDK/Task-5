@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Player - Music Vibes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Music Vibes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="player.html">Player</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page">
+      <h2>Music Player</h2>
+      <audio id="audio" controls>
+        <source src="song1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br/>
+      <button onclick="prevSong()">Prev</button>
+      <button onclick="nextSong()">Next</button>
+      <button onclick="shuffleSong()">Shuffle</button>
+      <button onclick="repeatSong()">Repeat</button>
+      <button onclick="showLyrics()">Show Lyrics</button>
+      <div id="lyrics" style="margin-top: 20px; white-space: pre-wrap;"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Music Vibes</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
